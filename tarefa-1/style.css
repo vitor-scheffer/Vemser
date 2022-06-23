@@ -45,7 +45,22 @@ body {
 
 nav ul li a,
 nav small {
+  text-decoration: none;
   color: white;
+}
+
+small {
+  margin-right: 3rem;
+}
+
+header nav ul li a {
+  margin-left: 1rem;
+}
+
+header nav ul {
+  float: right;
+  margin-top: 2.5rem;
+  margin-right: 32rem;
 }
 
 footer {
@@ -71,25 +86,39 @@ header nav ul li {
 
 #galery {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 2rem 18rem 2rem;
 }
 
-#galery .card {
-  margin-top: 2rem;
-  padding: 3rem 2rem;
+.card-1,
+.card-2,
+.card-3 {
+  margin: 2rem 0rem 2rem 10rem;
+  padding: 3rem 3rem;
   border: 1px solid rgba(102, 102, 102, 0.308);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: .25rem solid hsl(270 90% 40%);
   border-radius: .5rem .5rem 0 0;
+  float: left;
 }
 
 /* ============ MAIN-TEXT ============ */
 
 #main-text  {
   background-color: hsl(0 0% 95%);
-  padding: 2rem;
+  padding: 3rem;
   text-align: justify;
 }
+
+#main-text img {
+  float: left;
+  padding-right: 5rem;
+}
+
+#main-text p {
+  margin-top: 2rem;
+}
+
+
 
 /* ============ MAP ============ */
 
@@ -162,6 +191,7 @@ select {
   border-width: 0rem;
   color: white;
   width: 5rem;
+  cursor: pointer;
 }
 
 /* ============ FOOTER ============ */
@@ -178,4 +208,5 @@ nav {
 nav ul li {
   list-style-type: none;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
