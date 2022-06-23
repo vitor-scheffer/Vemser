@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+/* ============ RESET ============ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============ BASE ============ */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsl(270 , 36%, 57%, 1) 0%,
+    hsl(270 , 65%, 88%, 0.34) 100%
+    );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsl(270, 65%, 88%, 0.34),
+    hsl(270, 36%, 57%, 1)
+    );
+}
+
+/* ============ LAYOUT ============ */
+
+header {
+  background-color: hsl(270 90% 40%);
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a,
+nav small {
+  color: white;
+}
+
+footer {
+  background-color: hsl(270 90% 40%)
+}
+
+.logo img {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.logo {
+  padding: 1rem 0rem;
+}
+
+header nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+/* ============ GALERY ============ */
+
+#galery {
+  text-align: center;
+  padding: 2rem;
+}
+
+#galery .card {
+  margin-top: 2rem;
+  padding: 3rem 2rem;
+  border: 1px solid rgba(102, 102, 102, 0.308);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: .25rem solid hsl(270 90% 40%);
+  border-radius: .5rem .5rem 0 0;
+}
+
+/* ============ MAIN-TEXT ============ */
+
+#main-text  {
+  background-color: hsl(0 0% 95%);
+  padding: 2rem;
+  text-align: justify;
+}
+
+/* ============ MAP ============ */
+
+#map {
+  text-align: center;
+  padding: 2rem;
+}
+
+#map h2 {
+  margin: 2rem 0;
+}
+
+/* ============ ABOUT ============ */
+
+#about {
+  text-align: center;
+  padding: 2rem;
+}
+
+#about h1 {
+  margin-bottom: 2rem;
+}
+
+#about .text {
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+/* ============ CONTACT ============ */
+input,
+select,
+textarea {
+  margin-top: 0.5rem;
+}
+
+input {
+  width: 20rem;
+  padding-left: 5px;
+}
+
+select,
+textarea {
+  width: 20.55rem;
+}
+
+input {
+  height: 1.5rem;
+}
+
+select {
+  height: 1.75rem;
+}
+
+#contact h2 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#contact form {
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid rgba(102, 102, 102, 0.308);
+  border-radius: 0.5rem
+}
+
+#submit {
+  padding: 0.25rem 1rem;
+  background-color:hsl(270 90% 40%);
+  border-radius: 0.25rem;
+  border-width: 0rem;
+  color: white;
+  width: 5rem;
+}
+
+/* ============ FOOTER ============ */
+
+footer {
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  margin: 2rem 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}

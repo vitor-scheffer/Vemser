@@ -5,66 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <div>
-        <img width="50" src="./assets/download.jpg" alt="cogumelo do mario" />
-        <span>Melhores alunos do Vemser de todos os tempos</span>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
+      <nav class="container">
+        <div class="logo">
+          <img width="50" src="./assets/download.jpg" alt="cogumelo do mario" />
+          <small>Melhores alunos do Vemser de todos os tempos</small>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
       <!-- Contact -->
       <section id="contact">
-        <form action="">
-          <label for="nome">Digite seu nome completo:</label>
-          <input name="nome" placeholder="nome completo" type="text" required />
-          <br />
-          <br />
-          <label for="email">Digite seu e-mail:</label>
-          <input name="email" placeholder="e-mail" type="email" required />
+        <div class="container">
+          <h2>Contato</h2>
+          <form action="">
+            <label for="nome">Digite seu nome completo:</label>
+            <br />
+            <input
+              name="nome"
+              placeholder="digite o nome completo"
+              type="text"
+              required
+            />
+            <br />
+            <br />
+            <label for="email">Digite seu e-mail:</label>
+            <br />
+            <input
+              name="email"
+              placeholder="digite o e-mail"
+              type="email"
+              required
+            />
 
-          <br /><br />
+            <br /><br />
 
-          <label for="questions">Qual motivo do seu contato</label>
-          <select name="questions" id="questions">
-            <option value="q1">HTML é easy demais</option>
-            <option value="q2">CSS é moleza</option>
-            <option value="q3">JS é mamão com açúcar</option>
-            <option value="q4">React é hard</option>
-          </select>
+            <label for="questions">Qual motivo do seu contato</label>
+            <br />
+            <select name="questions" id="questions">
+              <option value="q1">Problema no site</option>
+              <option value="q2">Internet não funciona</option>
+              <option value="q3">Problema de infra</option>
+              <option value="q4">Sugestão de melhoria</option>
+            </select>
 
-          <br /><br />
+            <br /><br />
 
-          <label for="bio">Sua Mensagem</label>
-          <br />
-          <textarea name="bio" id="bio" cols="50" rows="10"></textarea>
+            <label for="bio">Sua Mensagem</label>
+            <br />
+            <textarea name="bio" id="bio" cols="50" rows="10"></textarea>
 
-          <br /><br />
+            <br /><br />
 
-          <input type="submit" name="submit" value="salvar" />
-        </form>
+            <input type="submit" id="submit" value="salvar" />
+          </form>
+        </div>
       </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-      <nav>
-        <ul>
-          <li><a href="./home.html">Home</a></li>
-          <li><a href="./about.html">Sobre</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </nav>
-      <address>AV. Andarai 531 - Porto Alegre</address>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <address>AV. Andarai 531 - Porto Alegre</address>
+      </div>
     </footer>
   </body>
 </html>
