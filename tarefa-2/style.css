@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-color: hsl(0, 0%, 18.82%);
+  
+}
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0rem;
+}
+
+nav .menu ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: white
+}
+
+li {
+  list-style-type: none;
+}
+/* ============ SCREEN 2 - GALERY ============ */
+
+#galery {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.dogs {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-top: 2.5rem;
+}
+
+.dog {
+  margin: 1.25rem 0.625rem;
+}
+
+/* ============ SCREEN 3 - YOUTUBE ============ */
+
+body {
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+}
+
+.watching {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
+
+.main-watching p {
+  margin-top: 1.25rem;
+}
+
+.recomends p {
+  margin-top: 0.3125rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ============ SCREEN 4 - INTER ============ */
+
+header .inter {
+  padding: 0.5rem 0rem;
+}
+
+.main-pictures {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+.main-pictures p {
+  position: relative;
+  margin-top: -5.27rem;
+  
+  height: 5rem;
+  padding-left: 1.25rem;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.aside-pictures {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.25rem;
+}
+
+.picture-3 {
+  margin-top: 1.25rem;
+}
+
+
+
