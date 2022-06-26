@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 80px 56px;
+}
+
+/* ============ VARIABLES ============ */
+:root {
+  /* HSL color mode */
+  --gray-color: #F5F5F5;
+  --secondary-color: #18A0FB;
+}
+ 
+/* ============ BASE ============ */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+main img {
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.primary-button, .secondary-button {
+  display: block;
+  width: 130px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  border: 1px solid var(--secondary-color);
+}
+
+.primary-button, .secondary-button:hover  {
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.secondary-button, .primary-button:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.button-lg {
+  width: 192px;
+  padding: 16px 0;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 72px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 50px;
+}
+
+h4 {
+  padding-bottom: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+  font-size: 12px;
+  line-height: 30px;
+  padding-bottom: 32px;
+}
+
+/* ============ LAYOUT ============ */
+header .container{
+  padding: 0px 56px;
+}
+
+header .flex-container {
+  justify-content: space-between;
+  height: 60px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav_bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none; 
+}
+
+nav ul li a {
+  color: #18A0FB;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ============ HOME ============ */
+#home .container {
+  max-width: 100vw;
+}
+
+.background-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 960px;
+  background: url(./assets/images/old-trafford-empty-stadium-soccer-hdr-manchester-united-stadium.jpg);
+}
+
+.icon-play {
+  display: flex;
+  font-size: 59px;
+  padding: 36px 36px 36px 40px;
+  border-radius: 100%;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: #F5F5F5;
+  position: relative;
+  top: 50%;
+}
+
+.icon-play:hover {
+  background-color: #F5F5F5;
+  color: var(--secondary-color);
+}
+
+.video-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 172px;
+  color: #F5F5F5
+}
+
+/* ============ ABOUT ============ */
+#about .flex-container {
+  gap: 148px;
+}
+
+#about .card {
+  margin-bottom: 60px;
+}
+
+#about .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.column{
+  display: flex;
+  max-width: 540px;
+  align-self: flex-end;
+}
+
+#about .flex-container{
+  flex-wrap: nowrap;
+}
+
+#about h2{
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+/* ============ IMAGE-LEFT ============ */
+#image-left {
+  background-color: var(--gray-color);
+}
+
+#image-left .container {
+  padding: 56px;
+}
+
+#image-left .flex-container{
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#image-left .card {
+  max-width: 40%;
+}
+
+#image-left img {
+  max-width: 528px;
+  width: 100%;
+}
+
+/* ============ IMAGE-RIGHT ============ */
+#image-right {
+  background-color: var(--gray-color);
+}
+
+#image-right .container {
+  padding: 56px;
+}
+
+#image-right .flex-container{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+#image-right .card {
+  max-width: 40%
+}
+
+#image-right img {
+  max-width: 528px;
+  width: 100%;
+  max-height: 297px;
+}
+
+/* ============ TESTIMONIALS ============ */
+#testimonials .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 100px;
+}
+
+#testimonials h3 {
+  text-align: center;
+}
+
+.galery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#testimonials h2 {
+  padding-bottom: 30px;
+}
+
+#testimonials h3 {
+  padding-bottom: 80px;
+}
+
+/* ============ CONTACT ============ */
+#contact {
+  background-color: var(--gray-color);
+}
+
+#contact .flex-container {
+  flex-wrap: nowrap;
+  gap: 84px;
+}
+
+#contact .buttons {
+  gap: 45px;
+}
+
+/* ============ FOOTER ============ */
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+footer nav ul li a {
+  color: #000000;
+  font-weight: 700;
+}
+
+footer li {
+  width: 100px;
+}
+
+footer hr {
+  color: #00000080;
+}
+
+.social-links {
+  text-align: center;
+  font-size: 44px;
+  padding-top: 80px;
+}
+
+.social-links a {
+  color: var(--secondary-color);
+}
+
+footer small {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  color: #000000CC;
+}
+
+/* ============ RESPONSIVE (MEDIA QUERIES) ============ */
+/* ============ -576 ============ */
+@media (max-width: 576px) {}
+
+/* ============ -768 ============ */
+@media (max-width: 768px) {}
+
+/* ============ -992 ============ */
+@media (max-width: 992px) {}
+
+
+
+
+
+
