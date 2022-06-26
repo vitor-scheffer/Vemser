@@ -9,7 +9,7 @@
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 80px 56px;
+  padding: 120px 0;
 }
 
 /* ============ VARIABLES ============ */
@@ -37,7 +37,7 @@ main img {
 .primary-button, .secondary-button {
   display: block;
   width: 130px;
-  padding: 10px 0;
+  padding: 12px 0;
   text-align: center;
   border-radius: 6px;
   font-weight: 500;
@@ -64,41 +64,34 @@ main img {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 52px;
   line-height: 80px;
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 48px;
   line-height: 72px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 36px;
   line-height: 50px;
 }
 
 h4 {
-  padding-bottom: 18px;
+  padding-bottom: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
 }
 
 p {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 30px;
-  padding-bottom: 32px;
 }
 
-/* ============ LAYOUT ============ */
-header .container{
-  padding: 0px 56px;
-}
-
-header .flex-container {
-  justify-content: space-between;
-  height: 60px;
+p:not(:last-child) {
+  padding-bottom: 32px; 
 }
 
 .flex-container {
@@ -107,28 +100,38 @@ header .flex-container {
   flex-wrap: wrap;
 }
 
+/* ============ LAYOUT ============ */
+header .container{
+  padding: 0px;
+}
+
+header .flex-container {
+  justify-content: space-between;
+  height: 80px;
+}
+
 .nav_bar {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 72px;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   list-style: none; 
 }
 
 nav ul li a {
-  color: #18A0FB;
+  color: var(--secondary-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
 }
 
-a {
-  text-decoration: none;
+#home h1 {
+  padding-bottom: 40px;
 }
 
 
@@ -138,29 +141,18 @@ a {
 }
 
 .background-image {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 960px;
-  background: url(./assets/images/old-trafford-empty-stadium-soccer-hdr-manchester-united-stadium.jpg);
+  height: calc(100vh - (60px));
+  background: url(././assets/wembley.jpg.jpg);
 }
 
-.icon-play {
-  display: flex;
-  font-size: 59px;
-  padding: 36px 36px 36px 40px;
-  border-radius: 100%;
-  border: 1px solid var(--secondary-color);
-  background-color: var(--secondary-color);
-  color: #F5F5F5;
+.play-button img {
   position: relative;
   top: 50%;
-}
-
-.icon-play:hover {
-  background-color: #F5F5F5;
-  color: var(--secondary-color);
 }
 
 .video-title {
@@ -172,50 +164,39 @@ a {
 }
 
 /* ============ ABOUT ============ */
-#about .flex-container {
-  gap: 148px;
-}
-
-#about .card {
-  margin-bottom: 60px;
-}
-
-#about .cards {
-  display: flex;
-  flex-direction: column;
-}
-
 .column{
   display: flex;
-  max-width: 540px;
-  align-self: flex-end;
+  flex-direction: column;
+  max-width: 550px;
+  gap: 60px 0;
+  align-self: flex-start;
 }
 
 #about .flex-container{
-  flex-wrap: nowrap;
+  gap: 100px;
 }
 
 #about h2{
-  width: 50%;
+  max-width: 600px;
   margin-bottom: 60px;
 }
 
 /* ============ IMAGE-LEFT ============ */
-#image-left {
-  background-color: var(--gray-color);
-}
-
-#image-left .container {
+#image-left .container,
+#image-right .container {
   padding: 56px;
 }
 
-#image-left .flex-container{
+#image-left .flex-container,
+#image-right .flex-container {
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
-#image-left .card {
-  max-width: 40%;
+#image-left .card,
+#image-right .card {
+  max-width: 480px;
 }
 
 #image-left img {
@@ -228,18 +209,8 @@ a {
   background-color: var(--gray-color);
 }
 
-#image-right .container {
-  padding: 56px;
-}
-
-#image-right .flex-container{
-  justify-content: space-between;
-  flex-wrap: wrap;
+#image-right .flex-container {
   flex-direction: row-reverse;
-}
-
-#image-right .card {
-  max-width: 40%
 }
 
 #image-right img {
@@ -248,32 +219,32 @@ a {
   max-height: 297px;
 }
 
+
 /* ============ TESTIMONIALS ============ */
-#testimonials .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 80px 100px;
-}
-
-#testimonials h3 {
+#testimonials .flex-container{
   text-align: center;
+  justify-content: center;
 }
 
-.galery {
+#testimonials h2{
+  margin-bottom: 30px;
+}
+
+#testimonials h3{
+  margin-bottom: 80px;
+}
+
+.galery{
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 64px 48px;
+  width: 950px;
 }
 
-#testimonials h2 {
-  padding-bottom: 30px;
-}
-
-#testimonials h3 {
-  padding-bottom: 80px;
+.galery img{
+  height: 125px;
 }
 
 /* ============ CONTACT ============ */
@@ -282,19 +253,29 @@ a {
 }
 
 #contact .flex-container {
-  flex-wrap: nowrap;
   gap: 84px;
 }
 
+#contact h3 {
+  text-align: justify;
+  max-width: 680px;
+}
+
 #contact .buttons {
+  flex-wrap: wrap;
   gap: 45px;
 }
 
 /* ============ FOOTER ============ */
-footer nav {
+footer{
+  text-align: center;
+}
+
+nav{
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer nav ul li a {
@@ -302,18 +283,20 @@ footer nav ul li a {
   font-weight: 700;
 }
 
-footer li {
-  width: 100px;
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
 }
 
-footer hr {
-  color: #00000080;
+hr{
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .social-links {
   text-align: center;
   font-size: 44px;
-  padding-top: 80px;
 }
 
 .social-links a {
@@ -327,16 +310,29 @@ footer small {
   color: #000000CC;
 }
 
-/* ============ RESPONSIVE (MEDIA QUERIES) ============ */
-/* ============ -576 ============ */
-@media (max-width: 576px) {}
+/* ============ MEDIA QUERIES ============ */
+@media (max-width: 1200px) {
+  .container {
+    margin: 120px 80px;
+  }
 
-/* ============ -768 ============ */
-@media (max-width: 768px) {}
+  header .container,
+  footer .container {
+    margin: 0 80px;
+  }
+}
 
-/* ============ -992 ============ */
-@media (max-width: 992px) {}
+@media (max-width: 1080px) {
+  header ul {
+    display: none;
+  }
 
+  #galery h2 {
+    text-align: center;
+  }
+}
+
+  
 
 
 
