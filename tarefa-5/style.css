@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  background-color: #EFF3F8
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90%;
+}
+
+header {
+  margin: 0;
+  width: 100vw;
+  height: 70px;
+  background: url(./assets/patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
+  color: white;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 14px
+}
+
+strong {
+  font-size: 14px;
+}
+
+nav {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+nav img {
+  max-width: 150px;
+}
+
+.b-day img {
+  margin: auto;
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 100%;
+}
+
+.b-day {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+  border-bottom: 1px solid #9e9e9e54;
+}
+
+.bday-title {
+  flex-direction: column;
+  min-width: 75%;
+  text-align: left;
+  margin: 0;
+}
+
+nav .search {
+  display: flex;
+  align-items: center;
+}
+
+nav form {
+  min-width: 400px;
+}
+
+nav input {
+  width: 100%;
+  height: calc(1.8125rem + 2px);
+  padding: 4px 8px;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  background-color: #356b6578;
+  border: 0px solid #78b455;
+}
+
+.recent-news {
+  margin: 16px 16px 0 0;
+  height: 100%;
+  max-width: 675px;
+  background-color:#F8F9FA;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 10%);
+  border-radius: 4px;
+}
+
+.card {
+  display: flex;
+  margin: 16px 16px;
+  background-color:#FFFFFF;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 10%);
+  border-radius: 4px;
+}
+
+.aside {
+  margin: 16px 0 0 0;
+  height: 100%;
+  flex-direction: column;
+  min-width: 450px;
+  border-radius: 4px;
+}
+
+.system {
+  background-color: #F8F9FA;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.system-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.b-days {
+  background-color: #F8F9FA;
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+
+}
+
+.card img {
+  border-radius: 4px 0 0 4px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.title-card {
+  padding: 8px 16px;
+}
+
+.interactions {
+  display: flex;
+  gap: 8px;
+}
+
+.recent-news a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.small-card {
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+  width: 120px;
+  height: 84px;
+}
+
+.small-card:hover {
+  background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%);
+}
+
+h5 {
+  padding: 16px 0 16px 16px;
+  border-bottom: 1px solid #9e9e9e54;
+}
